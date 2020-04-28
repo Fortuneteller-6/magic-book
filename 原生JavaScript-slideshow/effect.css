@@ -1,0 +1,54 @@
+.lunbo {
+    /* slideshow */
+    width: 202px;
+    height: 188px;
+    margin: 100px auto;
+    background-color: hotpink;
+}
+
+.box {
+    /* slideshow的主窗口 */
+    border: 1px solid black;
+    width: 200px;
+    height: 186px;
+    position: relative;
+}
+
+ul {
+    /* 所有图片的列表 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+}
+
+li {
+    /* 内含img */
+    float: left;
+}
+
+button {
+    /* 滑动按钮 */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btnL {
+    /* left按钮 */
+    position: absolute;
+    top: 83px;
+    left: 0;
+}
+
+.btnR {
+    /* right按钮 */
+    position: absolute;
+    top: 83px;
+    right: 0;
+}
