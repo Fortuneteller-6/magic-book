@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/goods.css">
+    <link rel="stylesheet" type="text/css" href="../css/news-letter.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="nav-global">
+            <div class="container">
+                <h1 class="nav-logo">
+                    <router-link to="/"></router-link>
+                </h1>
+                <ul class="nav-aside">
+                    <li class="nav-user">
+                        <a href="javascript:;">User Center</a>
+                        <!--active-->
+                        <div class="nav-user-wrapper">
+                            <div class="nav-user-list">
+                                <dl class="nav-user-avatar">
+                                    <dd><span class="ng-scope"></span></dd>
+                                    <dt class="ng-binding">Your Name</dt>
+                                </dl>
+                                <ul>
+                                    <li class="order"><a href="javascript:;">My Orders</a></li>
+                                    <li class="support"><a href="javascript:;">After Service</a></li>
+                                    <li class="coupon"><a href="javascript:;">Discount</a></li>
+                                    <li class="information"><a href="javascript:;">Account</a></li>
+                                    <li class="address"><a href="javascript:;">Delivery</a></li>
+                                    <li class="logout"><a href="javascript:;">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 购物车 -->
+                    <cart-panel></cart-panel>
+                    
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">Shop</a></li>
+                    <li><a href="javascript:;">Spring</a></li>
+                    <li><a href="javascript:;">Hot</a></li>
+                    <li><a href="javascript:;">Fathion</a></li>
+                    <li><a href="javascript:;">NewBest</a></li>
+                    <li><a href="javascript:;">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+        <div class="store-content item">
+            <div class="item-box">
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                            <div class="thumbnail">
+                                <ul>
+                                    <li  class="on">
+                                        <img src="../assets/img/product-img/pro-big-1.jpg" >
+                                    </li>
+                                    <li  >
+                                        <img src="../assets/img/product-img/pro-big-2.jpg" >
+                                    </li>
+                                    <li  >
+                                        <img src="../assets/img/product-img/pro-big-3.jpg" >
+                                    </li>
+                                    <li  >
+                                        <img src="../assets/img/product-img/pro-big-4.jpg" >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="thumb">
+                                <ul>
+                                    <li  class="on">
+                                        <img src="../assets/img/product-img/pro-big-1.jpg" width="400">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner">    
+                        <div class="sku-custom-title">
+                            <div class="params-price">
+                                <span><em style="font-size:25px;">$</em><i>180</i></span>
+                            </div>
+                            <div class="params-info">
+                                <h4>name</h4>
+                                <h6>name_title</h6>
+                            </div>
+                        </div>
+                        <div class="sku-dynamic-params-panel">
+                            <div class="sku-dynamic-params clear">
+                                <div class="params-name">Qty</div>
+                                <div class="params-detail clear">
+                                    <div class="item-num js-select-quantity">
+                                        <span class="down" class="{'down-disabled':false}" >-</span>
+                                        <span class="num">0</span>
+                                        <span class="up" class="{'down-disabled':false}">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sku-status">
+                            <div class="cart-operation-wrapper clearfix">
+                                <span class="blue-title-btn js-add-cart" ><a>Add to Cart</a></span>
+                                <span class="gray-title-btn"><a>Buy Now</a></span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <prompt></prompt>
+    </div>
+
+    <section class="newsletter-area section-padding-100-0">
+            <div class="newsletter-text ">
+                <h2>Subscribe for a <span>25% Discount</span></h2>
+                <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+            </div>
+            <div class="newsletter-form">
+                <form action="#" method="post">
+                    <input type="email" name="email" class="nl-email" placeholder="Your E-mail">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+    </section>
+
+    <footer class="footer_area clearfix">
+            <div class="footer_left">
+                <div class="footer-logo ">
+                    <a href="index.html"><img src="../assets/img/core-img/logo2.png" alt=""></a>
+                </div>
+                <p class="copywrite">
+                    Copyright &copy;2020 All rights reserved </br>This template is made with teacher for student
+                </p>
+            </div>
+            <div class="footer_menu">
+                <nav class="navbar navbar-expand-lg justify-content-end">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                    <div class="collapse navbar-collapse" id="footerNavContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Checkout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    </footer>
+</body>
+</html>

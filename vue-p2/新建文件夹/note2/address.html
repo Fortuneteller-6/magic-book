@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/address.css">
+    <link rel="stylesheet" type="text/css" href="../css/news-letter.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <title>Document</title>
+    <style>
+        .gray-box,
+        .gray-btn-menu-on:hover {
+            background: #FFF;
+        }
+        
+        .gray-box {
+            overflow: hidden;
+            border: 1px solid #D1D1D1;
+            border-color: rgba(0, 0, 0, .14);
+            border-radius: 8px;
+            box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+        }
+        
+        .account-content {
+            margin: 50px;
+        }
+        
+        .gray-box .title {
+            height: 60px;
+            padding: 0 10px 0 28px;
+            background: #F5F5F5;
+            background: linear-gradient(#FFF, #F5F5F5);
+            border-bottom: 1px solid #DCDCDC;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 1px 7px rgba(0, 0, 0, .06);
+            line-height: 60px;
+            color: #646464;
+        }
+        
+        .gray-box .pre-title {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .gray-box .title h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #626262;
+        }
+        
+        .blue-btn,
+        .gray-blue-btn,
+        .gray-btn,
+        .gray-icon-btn,
+        .light-blue-btn,
+        .light-gray-btn {
+            display: inline-block;
+            height: 38px;
+            padding: 0 20px;
+            border-radius: 8px;
+            line-height: 38px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .gray-blue-btn {
+            padding: 0;
+            background: #A2A2A2;
+        }
+        
+        .gray-box .title span {
+            overflow: hidden;
+            float: right;
+            margin-top: 11px;
+        }
+        
+        .blue-btn a,
+        .gray-blue-btn a,
+        .gray-btn a,
+        .gray-icon-btn a,
+        .light-blue-btn a,
+        .light-gray-btn a {
+            display: block;
+        }
+        
+        .gray-blue-btn a {
+            height: 38px;
+            line-height: 38px;
+            color: #FFF;
+        }
+        
+        .gray-blue-btn a.add {
+            padding: 0 13px 0 38px;
+            background: url(../assets/img/btn-icon-new.png) 0 -6px no-repeat;
+            transition: none;
+        }
+        
+        .gray-blue-btn:hover {
+            background: #ffc107;
+            box-shadow: none;
+        }
+        
+        .address-form {
+            width: 370px;
+            margin: 0 auto;
+        }
+        
+        .account-address .address-form {
+            padding: 30px;
+            margin: 0;
+        }
+        
+        .module-form-row {
+            position: relative;
+            padding-bottom: 10px;
+            margin: 0 auto;
+        }
+        
+        .address-form .module-form-row {
+            padding-bottom: 15px;
+        }
+        
+        .module-form-row .form-item-v3 {
+            position: relative;
+            height: 46px;
+            background: #FFF;
+            border: 1px solid #CCC;
+            border-radius: 6px;
+            box-shadow: 0 3px 5px -4px rgba(0, 0, 0, .4) inset, -1px 0 3px -2px rgba(0, 0, 0, .1) inset;
+            line-height: 46px;
+            font-size: 18px;
+            opacity: .618;
+            transition: opacity .3s ease;
+        }
+        
+        .module-form-row .form-item-v3 i {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            font-size: 16px;
+            color: #BEBEBE;
+        }
+        
+        .module-form-row .form-item-v3 input {
+            padding: 0 15px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+        }
+        
+        .address-form .form-item-v3 input {
+            width: 330px;
+        }
+        
+        .address-form .area-code-w {
+            width: 118px;
+        }
+        
+        .address-form .telephone-w {
+            width: 238px;
+        }
+        
+        .module-form-row div.select-item {
+            width: auto;
+            height: auto;
+            margin: 0;
+            background: 0 0;
+            border: none;
+            box-shadow: none;
+            opacity: 1;
+        }
+        
+        .module-form-row .form-item-v3 select {
+            margin: 0 0 0 15px;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .address-form .select-province {
+            width: 370px;
+        }
+        
+        .form-focus-item {
+            z-index: 1;
+            opacity: 1;
+            border: 1px solid #ffc107;
+        }
+        
+        .module-form-row div.select-item {
+            width: auto;
+            height: auto;
+            margin: 0;
+            background: 0 0;
+            border: none;
+            box-shadow: none;
+            opacity: 1;
+        }
+        
+        .module-form-row .form-item-v3 select {
+            height: 48px;
+            padding: 0 15px;
+            margin: 0;
+            background: -webkit-linear-gradient(top, #FAFAFA, #F5F5F5);
+            background: linear-gradient(#FAFAFA, #F5F5F5);
+            border: 1px solid #CCC;
+            border-radius: 6px;
+            box-shadow: 2px 0 0 rgba(255, 255, 255, .4) inset, 1px 0 0 rgba(255, 255, 255, .3);
+            line-height: 48px;
+            text-indent: 0;
+            outline: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+        }
+        
+        .address-form .select-city,
+        .address-form .select-district {
+            width: 180px;
+        }
+        
+        .blue-checkbox,
+        .blue-checkbox-disable,
+        .blue-checkbox-on {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            background: url(../../assets/img/checkbox-bg.png) no-repeat;
+            cursor: pointer;
+        }
+        
+        .address-form .blue-checkbox {
+            top: 0;
+            float: left;
+            margin-right: 5px;
+        }
+        
+        .dialog-blue-btn {
+            padding: 1px;
+            background: #ffc107;
+            background: linear-gradient(#ffc107, #ffc107);
+            border-radius: 6px;
+            text-align: center;
+            color: #FFF;
+        }
+        
+        .disabled-btn {
+            opacity: .4;
+        }
+        
+        .disabled-btn,
+        .disabled-btn a {
+            cursor: not-allowed;
+            -webkit-transition: none;
+            transition: none;
+            pointer-events: none;
+        }
+        
+        .dialog-blue-btn a {
+            display: block;
+            padding: 2px 0;
+            background: #ffc107;
+            background: linear-gradient(#ffc107, #ffc107);
+            border-radius: 5px;
+            box-shadow: inset 0 1px 2px #ffc107;
+            text-shadow: 0 -1px 0 #ffc107;
+            color: #FFF;
+        }
+        
+        .big-main-btn a {
+            height: 42px;
+            line-height: 42px;
+            font-size: 18px;
+        }
+        
+        .account-address .address-list-item {
+            height: 75px;
+            padding: 20px 0;
+            border-bottom: 1px solid #CFCFCF;
+            line-height: 24px;
+        }
+        
+        .account-address .address-list-item:last-child {
+            border-bottom: none;
+            border-radius: 0 0 7px 7px;
+        }
+        
+        .account-address .address-list-item .name {
+            display: table;
+            width: 106px;
+            height: 100%;
+            padding: 0 20px 0 24px;
+        }
+        
+        .account-address .address-list-item .name-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .account-address .address-list-item .detail {
+            display: table;
+            width: 440px;
+            height: 100%;
+            text-align: left;
+        }
+        
+        .account-address .address-list-item .detail-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .account-address .address-list-item .operation {
+            display: -webkit-box;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            width: 135px;
+            padding: 24px 0;
+        }
+        
+        .account-address .address-list-item .operation-cell {
+            display: flex;
+            text-align: center;
+        }
+        
+        .gray-edit-btn,
+        .red-del-btn {
+            width: 26px;
+            height: 26px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .gray-edit-btn,
+        .red-del-btn:hover a {
+            opacity: 1;
+        }
+        
+        .gray-edit-btn {
+            display: inline-block;
+            background: url(../assets/img/btn-icon-new.png) -9px -112px no-repeat #A2A2A2;
+            text-indent: -9999em;
+        }
+        
+        .account-address .address-list-item .operation .gray-edit-btn {
+            margin-right: 6px;
+        }
+        
+        .gray-edit-btn,
+        .red-del-btn {
+            width: 26px;
+            height: 26px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .red-del-btn {
+            position: relative;
+            display: inline-block;
+            background: #d84747;
+            background: linear-gradient(#f97474, #e05b5b);
+            line-height: 26px;
+            opacity: .62;
+            cursor: pointer;
+            transition: none;
+        }
+        
+        .red-del-btn a {
+            display: block;
+            width: 26px;
+            height: 26px;
+            background: url(../assets/img/btn-icon-new.png) -9px -262px no-repeat;
+            text-indent: -9999em;
+            color: #FFF;
+            transition: none;
+        }
+        
+        .red-del-btn em {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            height: 26px;
+            text-indent: 0;
+            font-size: 12px;
+            color: #FFF;
+        }
+        
+        .account-address .address-list-item .default {
+            width: 80px;
+            line-height: 75px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .account-address .address-list-item .default a {
+            color: #ffc107;
+            visibility: hidden;
+        }
+        
+        .account-address .address-list-item:hover .default a {
+            visibility: visible;
+        }
+        
+        .account-address .address-list-item .telephone {
+            width: 160px;
+            height: 100%;
+            line-height: 75px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav-global">
+            <div class="container">
+                <h1 class="nav-logo">
+                    <router-link to="/"></router-link>
+                </h1>
+                <ul class="nav-aside">
+                    <li class="nav-user">
+                        <a href="javascript:;">User Center</a>
+                        <!--active-->
+                        <div class="nav-user-wrapper">
+                            <div class="nav-user-list">
+                                <dl class="nav-user-avatar">
+                                    <dd><span class="ng-scope"></span></dd>
+                                    <dt class="ng-binding">Your Name</dt>
+                                </dl>
+                                <ul>
+                                    <li class="order"><a href="javascript:;">My Orders</a></li>
+                                    <li class="support"><a href="javascript:;">After Service</a></li>
+                                    <li class="coupon"><a href="javascript:;">Discount</a></li>
+                                    <li class="information"><a href="javascript:;">Account</a></li>
+                                    <li class="address"><a href="javascript:;">Delivery</a></li>
+                                    <li class="logout"><a href="javascript:;">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 购物车 -->
+                    <li class="nav-cart" style="display: none">
+                        <a href="javascript:;" class="ball-rect">Shop Cart</a>
+                        <span class="cart-empty-num " class="cart-num">
+                            <i>8</i>
+                        </span>
+                        <div class="nav-cart-wrapper">
+                            <div class="nav-cart-list">
+                                <div class="empty">
+                                    <h3>Shopping cart is empty</h3>
+                                    <p>You haven't bought any goods yet. Now go to the mall to buy!</p>
+                                </div>
+                                <div class="full">
+                                    <div class="nav-cart-items">
+                                        <ul>
+                                            <li class="clear">
+                                                <div class="cart-item js-cart-item cart-item-sell">
+                                                    <div class="cart-item-inner">
+                                                        <div class="item-thumb">
+                                                            <img src="../assets/img/product-img/product1.jpg" width="30px">
+                                                        </div>
+                                                        <div class="item-desc">
+                                                            <div class="cart-cell">
+                                                                <h4>
+                                                                    <a href="#/item/100027401">product_name</a>
+                                                                </h4>
+                                                                <h6>
+                                                                    <span class="price-icon">$</span><span class="price-num">20</span><span class="item-num">x 5</span>
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="del-btn">删除</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-cart-total">
+                                        <p>Quantity: <strong class="ng-binding">8</strong></p>
+                                        <h5>Total：<span class="price-icon" style="font-size:18px;">$ </span><span class="price-num ng-binding" ng-bind="cartMenu.totalPrice">100</span></h5>
+                                        <h6>
+                                            <router-link to='/cart' class="nav-cart-btn">Go to cart</router-link>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <transition name="ball" @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter">
+                            <div class="addcart-mast" v-show="ball.show">
+                                <img class="mask-item" />
+                            </div>
+                        </transition>
+                    </li>
+
+                </ul>
+                <ul class="nav-list">
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">Shop</a></li>
+                    <li><a href="javascript:;">Spring</a></li>
+                    <li><a href="javascript:;">Hot</a></li>
+                    <li><a href="javascript:;">Fathion</a></li>
+                    <li><a href="javascript:;">NewBest</a></li>
+                    <li><a href="javascript:;">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="account-content">
+        <div class="account-address">
+            <div class="gray-box clear">
+                <div class="title pre-title">
+                    <h2 class="fn-left">Receipt information</h2>
+                    <span class="gray-blue-btn js-add-address"><a class="add" @click="addReceive">Add Address</a></span>
+                </div>
+                <div class="box-inner clear">
+                    <div v-if="receiveInfo.length">
+                        <div class="address-list-item default-item" v-for="receive,index in receiveInfo">
+                            <div class="name fn-left">
+                                <div class="name-cell">lao feng</div>
+                            </div>
+                            <div class="detail fn-left">
+                                <div class="detail-cell">heilongjiang harbin nangang buka</div>
+                            </div>
+                            <div class="operation fn-right">
+                                <div class="operation-cell">
+                                    <a class="gray-edit-btn js-edit-address" ">modify</a>
+                                <span class="red-del-btn js-del-address "> <a>delete</a><em>delete</em> </span>
+                            </div>
+                        </div>
+                        <div class="default fn-right ">
+                          <span >（default）</span>
+                          <a >default</a>
+                        </div>
+                        <div class="telephone fn-right ">18145699653</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 显示增加 -->
+    </div>
+
+    <section class="newsletter-area section-padding-100-0 ">
+            <div class="newsletter-text ">
+                <h2>Subscribe for a <span>25% Discount</span></h2>
+                <p>Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+            </div>
+            <div class="newsletter-form ">
+                <form action="# " method="post ">
+                    <input type="email " name="email " class="nl-email " placeholder="Your E-mail ">
+                    <input type="submit " value="Subscribe ">
+                </form>
+            </div>
+    </section>
+
+    <footer class="footer_area clearfix ">
+            <div class="footer_left ">
+                <div class="footer-logo ">
+                    <a href="index.html "><img src="../assets/img/core-img/logo2.png " alt=" "></a>
+                </div>
+                <p class="copywrite ">
+                    Copyright &copy;2020 All rights reserved </br>This template is made with teacher for student
+                </p>
+            </div>
+            <div class="footer_menu ">
+                <nav class="navbar navbar-expand-lg justify-content-end ">
+                    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#footerNavContent " aria-controls="footerNavContent " aria-expanded="false " aria-label="Toggle navigation "><i class="fa fa-bars "></i></button>
+                    <div class="collapse navbar-collapse " id="footerNavContent ">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item active ">
+                                <a class="nav-link " href="# ">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Shop</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Product</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Cart</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Checkout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    </footer>
+</body>
+</html>
