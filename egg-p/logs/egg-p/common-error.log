@@ -1,0 +1,2057 @@
+2019-12-12 09:36:38,226 ERROR 15736 [-/127.0.0.1/-/6ms GET /admin/role/update] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\role\update.html) [Line 36, Column 13]
+  expected block end in endfor statement
+  expected block end in endfor statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 15736
+hostname: DESKTOP-M355L57
+
+2019-12-12 13:30:03,951 ERROR 2368 nodejs.ClusterClientNoResponseError: client no response in 6750755ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 2368
+hostname: DESKTOP-M355L57
+
+2019-12-12 14:28:25,656 ERROR 20712 [-/127.0.0.1/-/2ms GET /admin/role/edit/5df0c30f1118501b6ca6f96e] nodejs.TypeError: this.ctx.service.role.findOne is not a function
+    at RoleController.edit (E:\git_test\egg-p\app\controller\admin\role.js:32:50)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 20712
+hostname: DESKTOP-M355L57
+
+2019-12-12 14:29:42,119 ERROR 15580 [-/127.0.0.1/-/7ms GET /admin/role/edit/5df0c30f1118501b6ca6f96e] nodejs.AssertionError [ERR_ASSERTION]: Can't find admin/role/edit from E:\git_test\egg-p\app\view
+    at Map.resolve (E:\git_test\egg-p\node_modules\egg-view\lib\view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 15580
+hostname: DESKTOP-M355L57
+
+2019-12-12 14:31:49,103 ERROR 6868 [-/127.0.0.1/-/8ms GET /admin/role/edit/5df0c2d71118501b6ca6f96d] nodejs.AssertionError [ERR_ASSERTION]: Can't find admin/role/edit from E:\git_test\egg-p\app\view
+    at Map.resolve (E:\git_test\egg-p\node_modules\egg-view\lib\view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 6868
+hostname: DESKTOP-M355L57
+
+2019-12-12 15:41:02,095 ERROR 5928 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 5928
+hostname: DESKTOP-M355L57
+
+2019-12-12 17:23:31,739 ERROR 8092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8092
+hostname: DESKTOP-M355L57
+
+2019-12-12 18:54:21,584 ERROR 8092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8092
+hostname: DESKTOP-M355L57
+
+2019-12-12 19:15:14,325 ERROR 8092 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8092
+hostname: DESKTOP-M355L57
+
+2019-12-12 19:22:09,771 ERROR 9940 [-/127.0.0.1/-/1ms GET /admin/staff/add] nodejs.TypeError: this.ctx.service.findAll is not a function
+    at UserController.add (E:\git_test\egg-p\app\controller\admin\staff.js:6:42)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 9940
+hostname: DESKTOP-M355L57
+
+2019-12-12 19:22:36,625 ERROR 21360 [-/127.0.0.1/-/2ms GET /admin/staff/add] nodejs.TypeError: this.ctx.service.findAll is not a function
+    at UserController.add (E:\git_test\egg-p\app\controller\admin\staff.js:6:42)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 21360
+hostname: DESKTOP-M355L57
+
+2019-12-12 19:39:29,349 ERROR 11948 [-/127.0.0.1/-/9ms GET /admin/staff/add] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at UserController.add (E:\git_test\egg-p\app\controller\admin\staff.js:6:48)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 11948
+hostname: DESKTOP-M355L57
+
+2019-12-12 20:45:40,055 ERROR 16524 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16524
+hostname: DESKTOP-M355L57
+
+2019-12-13 10:51:15,775 ERROR 2356 [-/127.0.0.1/-/22ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 15, Column 13]
+  expected block end in for statement
+  expected block end in for statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 2356
+hostname: DESKTOP-M355L57
+
+2019-12-13 10:52:05,676 ERROR 11408 [-/127.0.0.1/-/37ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 15, Column 13]
+  expected block end in for statement
+  expected block end in for statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 11408
+hostname: DESKTOP-M355L57
+
+2019-12-13 10:53:38,281 ERROR 12536 [-/127.0.0.1/-/18ms GET /admin/staff/list] nodejs.ReferenceError: staffs is not defined
+    at UserController.list (E:\git_test\egg-p\app\controller\admin\staff.js:40:57)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 12536
+hostname: DESKTOP-M355L57
+
+2019-12-13 10:54:03,854 ERROR 2956 [-/127.0.0.1/-/42ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 14, Column 41]
+  expected block end in for statement
+  expected block end in for statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 2956
+hostname: DESKTOP-M355L57
+
+2019-12-13 13:32:57,730 ERROR 13728 nodejs.ClusterClientNoResponseError: client no response in 6616587ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 13728
+hostname: DESKTOP-M355L57
+
+2019-12-13 13:51:38,702 ERROR 20708 [-/127.0.0.1/-/27ms GET /admin/staff/list] nodejs.ReferenceError: doc is not defined
+    at UserController.list (E:\git_test\egg-p\app\controller\admin\staff.js:41:85)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 20708
+hostname: DESKTOP-M355L57
+
+2019-12-13 15:05:20,600 ERROR 6028 [-/127.0.0.1/-/9ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 17, Column 59]
+  Error: Unable to call `helper["dateformat"]`, which is undefined or falsey
+  Error: Unable to call `helper["dateformat"]`, which is undefined or falsey
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:53:3)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:556:10)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6028
+hostname: DESKTOP-M355L57
+
+2019-12-13 15:05:48,328 ERROR 6028 [-/127.0.0.1/-/7ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 17, Column 59]
+  TypeError: Invalid date
+  TypeError: Invalid date
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:53:3)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:556:10)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6028
+hostname: DESKTOP-M355L57
+
+2019-12-13 15:05:53,058 ERROR 6028 [-/127.0.0.1/-/29ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 17, Column 59]
+  TypeError: Invalid date
+  TypeError: Invalid date
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:53:3)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:556:10)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6028
+hostname: DESKTOP-M355L57
+
+2019-12-13 15:07:31,818 ERROR 6028 [-/127.0.0.1/-/5ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 17, Column 59]
+  TypeError: Invalid date
+  TypeError: Invalid date
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:53:3)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:556:10)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6028
+hostname: DESKTOP-M355L57
+
+2019-12-13 15:08:36,179 ERROR 6028 [-/127.0.0.1/-/6ms GET /admin/staff/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\staff\list.html) [Line 18, Column 62]
+  parseAggregate: expected colon after dict key
+  parseAggregate: expected colon after dict key
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6028
+hostname: DESKTOP-M355L57
+
+2019-12-13 18:32:33,602 ERROR 13728 nodejs.ClusterClientNoResponseError: client no response in 4502185ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 13728
+hostname: DESKTOP-M355L57
+
+2019-12-16 09:18:28,705 ERROR 18532 [-/127.0.0.1/-/112ms POST /admin/dologin?_csrf=ogblVV5W-LK_uZjjeLkV5XB6yzI7r1TAEIw0] nodejs.TypeError: Cannot read property '_id' of undefined
+    at LoginController.dologin (E:\git_test\egg-p\app\controller\admin\login.js:27:34)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 18532
+hostname: DESKTOP-M355L57
+
+2019-12-16 09:48:47,981 ERROR 14916 [-/127.0.0.1/-/15ms POST /admin/staff/doedit] nodejs.ReferenceError: staff is not defined
+    at UserController.doedit (E:\git_test\egg-p\app\controller\admin\staff.js:79:23)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 14916
+hostname: DESKTOP-M355L57
+
+2019-12-16 13:33:24,655 ERROR 6432 nodejs.ClusterClientNoResponseError: client no response in 7220549ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 6432
+hostname: DESKTOP-M355L57
+
+2019-12-16 13:46:31,954 ERROR 16148 [-/127.0.0.1/-/4ms POST /admin/staff/doedit] nodejs.ReferenceError: _id is not defined
+    at UserController.doedit (E:\git_test\egg-p\app\controller\admin\staff.js:95:68)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 16148
+hostname: DESKTOP-M355L57
+
+2019-12-16 16:42:07,924 ERROR 6432 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6432
+hostname: DESKTOP-M355L57
+
+2019-12-16 16:42:27,505 ERROR 6432 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6432
+hostname: DESKTOP-M355L57
+
+2019-12-16 20:11:16,486 ERROR 21004 [egg-mongoose] mongodb://testAdmin:******@localhost:27017/test disconnected
+2019-12-17 10:09:18,366 ERROR 19564 [-/127.0.0.1/-/20ms POST /admin/access/doadd] nodejs.TypeError: Cannot read property 'ObjectId' of undefined
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:19:57)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 19564
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:11:14,590 ERROR 11232 [-/127.0.0.1/-/23ms POST /admin/access/doadd] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:19:57)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+
+pid: 11232
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:12:56,808 ERROR 3256 [-/127.0.0.1/-/17ms POST /admin/access/doadd] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:19:57)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+
+pid: 3256
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:14:37,606 ERROR 9564 [-/127.0.0.1/-/15ms POST /admin/access/doadd] nodejs.ReferenceError: access_module_id is not defined
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:19:66)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 9564
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:15:11,603 ERROR 8080 [-/127.0.0.1/-/17ms POST /admin/access/doadd] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:19:57)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+
+pid: 8080
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:21:09,556 ERROR 17424 [-/127.0.0.1/-/22ms POST /admin/access/doadd] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at AccessController.doadd (E:\git_test\egg-p\app\controller\admin\access.js:21:57)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+
+pid: 17424
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:58:16,601 ERROR 4320 [-/127.0.0.1/-/21ms GET /admin/access/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\access\list.html) [Line 37, Column 15]
+  unexpected token: %
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 4320
+hostname: DESKTOP-M355L57
+
+2019-12-17 10:58:45,648 ERROR 4320 [-/127.0.0.1/-/6ms GET /admin/access/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\access\list.html) [Line 28, Column 15]
+  unexpected token: %
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 4320
+hostname: DESKTOP-M355L57
+
+2019-12-17 11:26:39,404 ERROR 6996 [-/127.0.0.1/-/5ms GET /admin/access/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\access\list.html) [Line 27, Column 141]
+  expected block end in if statement
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6996
+hostname: DESKTOP-M355L57
+
+2019-12-17 11:28:23,738 ERROR 6996 [-/127.0.0.1/-/4ms GET /admin/access/list] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\access\list.html) [Line 27, Column 141]
+  expected block end in if statement
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 6996
+hostname: DESKTOP-M355L57
+
+2019-12-17 13:34:49,551 ERROR 16548 nodejs.ClusterClientNoResponseError: client no response in 7184302ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 16548
+hostname: DESKTOP-M355L57
+
+2019-12-17 14:10:42,775 ERROR 4948 [-/127.0.0.1/-/7ms GET /admin/access/edit?id=5df83c1132c4843a60dac4a1] nodejs.TypeError: Cannot read property 'flag' of undefined
+    at AccessController.edit (E:\git_test\egg-p\app\controller\admin\access.js:45:20)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 4948
+hostname: DESKTOP-M355L57
+
+2019-12-17 14:51:59,258 ERROR 3236 [-/127.0.0.1/-/20ms GET /admin/access/list] nodejs.ReferenceError: accessArr is not defined
+    at AccessController.list (E:\git_test\egg-p\app\controller\admin\access.js:38:25)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 3236
+hostname: DESKTOP-M355L57
+
+2019-12-17 14:52:16,602 ERROR 3236 [-/127.0.0.1/-/11ms GET /admin/access/list] nodejs.ReferenceError: accessArr is not defined
+    at AccessController.list (E:\git_test\egg-p\app\controller\admin\access.js:38:25)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 3236
+hostname: DESKTOP-M355L57
+
+2019-12-18 10:04:01,845 ERROR 11116 [-/127.0.0.1/-/10ms GET /admin/access/edit?id=5df869943e17981b54e060dc] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\access\edit.html) [Line 49, Column 47]
+  unknown block tag: endfor
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 11116
+hostname: DESKTOP-M355L57
+
+2019-12-18 11:35:26,707 ERROR 16860 nodejs.ClusterClientNoResponseError: client no response in 194538ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 16860
+hostname: DESKTOP-M355L57
+
+2019-12-18 13:33:14,415 ERROR 16860 nodejs.ClusterClientNoResponseError: client no response in 6987700ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 16860
+hostname: DESKTOP-M355L57
+
+2019-12-19 10:03:12,294 ERROR 15324 [-/127.0.0.1/-/7ms GET /admin/role/auth/5df225f7fe245653385b1fe1] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\role\auth.html)
+  unexpected end of file
+  unexpected end of file
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:542:21)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:366:27
+    at createTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:315:9)
+    at handle (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:327:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:339:9
+    at next (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:360:10)
+    at Promise (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:13:25)
+    at new Promise (<anonymous>)
+    at NunjucksView.render (E:\git_test\egg-p\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (E:\git_test\egg-p\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 15324
+hostname: DESKTOP-M355L57
+
+2019-12-19 11:32:24,513 ERROR 13640 nodejs.ClusterClientNoResponseError: client no response in 66290ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 13640
+hostname: DESKTOP-M355L57
+
+2019-12-19 13:34:19,735 ERROR 13640 nodejs.ClusterClientNoResponseError: client no response in 7295219ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 13640
+hostname: DESKTOP-M355L57
+
+2019-12-19 14:30:25,893 ERROR 13640 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13640
+hostname: DESKTOP-M355L57
+
+2019-12-19 14:30:27,481 ERROR 13640 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13640
+hostname: DESKTOP-M355L57
+
+2019-12-19 15:03:54,584 ERROR 19968 [-/127.0.0.1/-/24ms POST /admin/role/doauth] nodejs.TypeError: access_checked.forEach is not a function
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:86:28)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 19968
+hostname: DESKTOP-M355L57
+
+2019-12-19 15:04:39,992 ERROR 9948 [-/127.0.0.1/-/15ms POST /admin/role/doauth] nodejs.TypeError: access_checked.forEach is not a function
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:86:28)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 9948
+hostname: DESKTOP-M355L57
+
+2019-12-19 15:09:39,088 ERROR 2860 [-/127.0.0.1/-/17ms POST /admin/role/doauth] nodejs.TypeError: access_checked.forEach is not a function
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:86:28)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 2860
+hostname: DESKTOP-M355L57
+
+2019-12-19 15:11:34,385 ERROR 21264 [-/127.0.0.1/-/13ms POST /admin/role/doauth] nodejs.TypeError: access_checked.forEach is not a function
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:86:28)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 21264
+hostname: DESKTOP-M355L57
+
+2019-12-19 16:05:30,708 ERROR 1016 [-/127.0.0.1/-/1ms GET /admin/role/auth/5df225f7fe245653385b1fe1] nodejs.TypeError: this.ctx.service.access.findAllWithChecked is not a function
+    at RoleController.auth (E:\git_test\egg-p\app\controller\admin\role.js:70:52)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 1016
+hostname: DESKTOP-M355L57
+
+2019-12-19 17:20:12,667 ERROR 11256 [-/127.0.0.1/-/2ms GET /admin/role/auth/5df225f7fe245653385b1fe1] nodejs.TypeError: this.ctx.service.access.findAllWithChecked is not a function
+    at RoleController.auth (E:\git_test\egg-p\app\controller\admin\role.js:70:52)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 11256
+hostname: DESKTOP-M355L57
+
+2019-12-19 17:27:53,966 ERROR 20116 [-/127.0.0.1/-/32ms GET /admin/role/auth/5df225f7fe245653385b1fe1] nodejs.TypeError: accessChecked.indexof is not a function
+    at AccessService.findAllWithChecked (E:\git_test\egg-p\app\service\access.js:166:39)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 20116
+hostname: DESKTOP-M355L57
+
+2019-12-19 17:28:46,178 ERROR 11188 [-/127.0.0.1/-/10ms GET /admin/role/auth/5df22609fe245653385b1fe2] nodejs.TypeError: accessChecked.indexof is not a function
+    at AccessService.findAllWithChecked (E:\git_test\egg-p\app\service\access.js:166:39)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 11188
+hostname: DESKTOP-M355L57
+
+2019-12-19 17:29:59,971 ERROR 12776 [-/127.0.0.1/-/9ms GET /admin/role/auth/5df22609fe245653385b1fe2] nodejs.TypeError: accessChecked.indexof is not a function
+    at AccessService.findAllWithChecked (E:\git_test\egg-p\app\service\access.js:168:39)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 12776
+hostname: DESKTOP-M355L57
+
+2019-12-19 17:37:05,670 ERROR 18344 [-/127.0.0.1/-/18ms POST /admin/role/doauth] nodejs.TypeError: access_checked.forEach is not a function
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:87:28)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:19
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 18344
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:04:26,463 ERROR 18676 [-/127.0.0.1/-/2ms GET /admin] nodejs.TypeError: Cannot read property 'model' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:40
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 18676
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:06:12,077 ERROR 17748 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17748
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:06:24,668 ERROR 10884 [-/127.0.0.1/-/39ms GET /admin] nodejs.TypeError: Cannot read property 'toString' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:11:62
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10884
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:06:26,177 ERROR 10884 [-/127.0.0.1/-/7ms GET /admin] nodejs.TypeError: Cannot read property 'toString' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:11:62
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10884
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:07:00,670 ERROR 10884 [-/127.0.0.1/-/16ms GET /admin/login] nodejs.TypeError: Cannot read property 'toString' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:11:62
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10884
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:22:44,540 ERROR 11108 [-/127.0.0.1/-/9ms GET /admin/role/add] nodejs.TypeError: Cannot set property 'body' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:15:35
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 11108
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:22:46,360 ERROR 11108 [-/127.0.0.1/-/6ms GET /admin/role/list] nodejs.TypeError: Cannot set property 'body' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:15:35
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 11108
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:22:48,885 ERROR 11108 [-/127.0.0.1/-/6ms GET /admin/staff/list] nodejs.TypeError: Cannot set property 'body' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:15:35
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 11108
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:31:50,686 ERROR 12360 [-/127.0.0.1/-/107ms GET /admin/role/add] nodejs.Error: next() called multiple times
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:36:45)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:19:19
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 12360
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:31:51,818 ERROR 12360 [-/127.0.0.1/-/15ms GET /admin/role/list] nodejs.Error: next() called multiple times
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:36:45)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:19:19
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 12360
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:37:37,333 ERROR 4572 [-/127.0.0.1/-/52ms GET /admin] nodejs.ReferenceError: access_id_a is not defined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:11:13
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 4572
+hostname: DESKTOP-M355L57
+
+2019-12-20 10:42:44,645 ERROR 11560 [-/127.0.0.1/-/35ms GET /admin] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:11:32
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 11560
+hostname: DESKTOP-M355L57
+
+2019-12-20 13:34:37,819 ERROR 17748 nodejs.ClusterClientNoResponseError: client no response in 7908514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 17748
+hostname: DESKTOP-M355L57
+
+2019-12-20 15:41:54,410 ERROR 15308 [-/127.0.0.1/-/32ms POST /admin/role/doauth] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:89:48)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:19:19
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 15308
+hostname: DESKTOP-M355L57
+
+2019-12-20 15:43:05,452 ERROR 19088 [-/127.0.0.1/-/22ms POST /admin/role/doauth] nodejs.Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:59:11)
+    at ObjectID [as ObjectId] (E:\git_test\egg-p\node_modules\bson\lib\bson\objectid.js:40:43)
+    at RoleController.doauth (E:\git_test\egg-p\app\controller\admin\role.js:91:48)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:19:19
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 19088
+hostname: DESKTOP-M355L57
+
+2019-12-20 15:52:26,988 ERROR 8756 [-/127.0.0.1/-/7ms GET /admin/role/auth?_id=5df225f7fe245653385b1fe1] nodejs.ReferenceError: role_id is not defined
+    at RoleController.auth (E:\git_test\egg-p\app\controller\admin\role.js:74:71)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:19:19
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 8756
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:07:41,317 ERROR 17724 [-/127.0.0.1/-/13ms GET /admin] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 17724
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:08:59,725 ERROR 17724 [-/127.0.0.1/-/11ms GET /admin/login] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 17724
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:09:03,129 ERROR 776 [-/127.0.0.1/-/45ms GET /admin] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 776
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:09:13,963 ERROR 776 [-/127.0.0.1/-/12ms GET /admin/login] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 776
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:09:16,294 ERROR 776 [-/127.0.0.1/-/12ms GET /admin/login] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 776
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:10:17,579 ERROR 12672 [-/127.0.0.1/-/61ms GET /admin] nodejs.TypeError: Cannot read property '_id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:61
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 12672
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:39:12,774 ERROR 1456 [-/127.0.0.1/-/5ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:10:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 1456
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:40:07,247 ERROR 10652 [-/127.0.0.1/-/30ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:10:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10652
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:40:08,937 ERROR 10652 [-/127.0.0.1/-/3ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:10:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10652
+hostname: DESKTOP-M355L57
+
+2019-12-20 17:40:14,991 ERROR 10652 [-/127.0.0.1/-/25ms POST /admin/dologin?_csrf=ggz8gqei-xNyGuSIHtMxHqcLJZsPu_cVohJI] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:10:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 10652
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:05:43,375 ERROR 19144 [-/127.0.0.1/-/1ms GET /admin/login] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 19144
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:05:49,411 ERROR 19144 [-/127.0.0.1/-/1ms GET /admin/login] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 19144
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:05:53,383 ERROR 19144 [-/127.0.0.1/-/1ms GET /admin/logout] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:8:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 19144
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:06:51,005 ERROR 15068 [-/127.0.0.1/-/11ms GET /admin/logout] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 15068
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:06:51,534 ERROR 15068 [-/127.0.0.1/-/0ms GET /admin/logout] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 15068
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:06:52,294 ERROR 15068 [-/127.0.0.1/-/1ms GET /admin/logout] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 15068
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:06:58,400 ERROR 15068 [-/127.0.0.1/-/1ms GET /admin/login] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 15068
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:07:13,966 ERROR 15068 [-/127.0.0.1/-/1ms GET /admin/login] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:22
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 15068
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:17:15,460 ERROR 6804 [-/127.0.0.1/-/4ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 6804
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:18:29,421 ERROR 13956 [-/127.0.0.1/-/23ms GET /admin/login] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 13956
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:18:29,986 ERROR 13956 [-/127.0.0.1/-/5ms GET /admin/login] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 13956
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:18:36,648 ERROR 13956 [-/127.0.0.1/-/3ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 13956
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:18:37,135 ERROR 13956 [-/127.0.0.1/-/3ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:13:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 13956
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:21:50,736 ERROR 9248 [-/127.0.0.1/-/8ms GET /admin] nodejs.TypeError: Cannot read property 'id' of null
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:12:82
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 9248
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:23:42,641 ERROR 15344 nodejs.Error: [ClusterClient] leader does not be active in 60000ms on port:64510
+    at Function.waitFor (E:\git_test\egg-p\node_modules\cluster-client\lib\server.js:238:15)
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 15344
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:30:36,553 ERROR 8588 [-/127.0.0.1/-/15ms GET /admin] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at HomeController.index (E:\git_test\egg-p\app\controller\admin\home.js:9:52)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:23:23
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 8588
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:31:14,690 ERROR 8588 [-/127.0.0.1/-/11ms GET /admin] nodejs.TypeError: Cannot read property 'staff_name' of undefined
+    at HomeController.index (E:\git_test\egg-p\app\controller\admin\home.js:9:52)
+    at Object.callFn (E:\git_test\egg-p\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\git_test\egg-p\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\git_test\egg-p\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at next (E:\git_test\egg-p\node_modules\koa-compose\index.js:45:18)
+    at E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\git_test\egg-p\node_modules\koa-compose\index.js:44:32)
+    at E:\git_test\egg-p\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\git_test\egg-p\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:23:23
+    at processTicksAndRejections (internal/process/next_tick.js:81:5)
+
+pid: 8588
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:45:28,324 ERROR 10148 [-/127.0.0.1/-/14ms GET /admin] nodejs.ReferenceError: staff_name is not defined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:9:9
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 10148
+hostname: DESKTOP-M355L57
+
+2019-12-20 19:52:40,987 ERROR 10856 [-/127.0.0.1/-/11ms GET /admin] nodejs.ReferenceError: staff_name is not defined
+    at E:\git_test\egg-p\app\middleware\adminAuth.js:10:69
+    at fn (E:\git_test\egg-p\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\git_test\egg-p\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\git_test\egg-p\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\git_test\egg-p\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (E:\git_test\egg-p\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (E:\git_test\egg-p\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+
+pid: 10856
+hostname: DESKTOP-M355L57
+
+2019-12-20 20:33:00,443 ERROR 11852 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11852
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:32,242 ERROR 19024 [-/127.0.0.1/-/15ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:32,888 ERROR 19024 [-/127.0.0.1/-/14ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:55,390 ERROR 19024 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:56,179 ERROR 19024 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:56,807 ERROR 19024 [-/127.0.0.1/-/11ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:57,944 ERROR 19024 [-/127.0.0.1/-/15ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:34:58,331 ERROR 19024 [-/127.0.0.1/-/9ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 19]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:13,660 ERROR 19024 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:14,810 ERROR 19024 [-/127.0.0.1/-/9ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:15,412 ERROR 19024 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:15,819 ERROR 19024 [-/127.0.0.1/-/8ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:16,314 ERROR 19024 [-/127.0.0.1/-/9ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:35:16,704 ERROR 19024 [-/127.0.0.1/-/8ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 7, Column 22]
+  unexpected token: %
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 19024
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:37:33,795 ERROR 18288 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:162:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 18288
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:39:33,907 ERROR 16532 [-/127.0.0.1/-/23ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 16, Column 11]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 16, Column 11]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:39:34,535 ERROR 16532 [-/127.0.0.1/-/14ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 16, Column 11]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 16, Column 11]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:48:42,479 ERROR 16532 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:49:28,254 ERROR 16532 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:49:29,490 ERROR 16532 [-/127.0.0.1/-/7ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 13, Column 29]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:50:52,506 ERROR 16532 [-/127.0.0.1/-/14ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 14, Column 29]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 14, Column 29]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:50:53,491 ERROR 16532 [-/127.0.0.1/-/9ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 14, Column 29]
+  unknown block tag: endfor
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 14, Column 29]
+  unknown block tag: endfor
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:52:11,263 ERROR 16532 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:52:12,198 ERROR 16532 [-/127.0.0.1/-/11ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:52:13,102 ERROR 16532 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:52:13,563 ERROR 16532 [-/127.0.0.1/-/8ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:52:57,332 ERROR 16532 [-/127.0.0.1/-/16ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:53:45,688 ERROR 16532 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:53:46,391 ERROR 16532 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:54:08,730 ERROR 16532 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:54:09,606 ERROR 16532 [-/127.0.0.1/-/11ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 90]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:55:58,072 ERROR 16532 [-/127.0.0.1/-/11ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:55:59,119 ERROR 16532 [-/127.0.0.1/-/12ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:56:00,132 ERROR 16532 [-/127.0.0.1/-/8ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 84]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:56:38,253 ERROR 16532 [-/127.0.0.1/-/15ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 87]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 87]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-21 09:56:39,134 ERROR 16532 [-/127.0.0.1/-/10ms GET /admin] nodejs.Template render error: (E:\git_test\egg-p\app\view\admin\home\index.html)
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 87]
+  expected block end in if statement
+  Template render error: (E:\git_test\egg-p\app\view\admin\common\aside.html) [Line 3, Column 87]
+  expected block end in if statement
+    at Object._prettifyError (E:\git_test\egg-p\node_modules\nunjucks\src\lib.js:36:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:11)
+    at E:\git_test\egg-p\node_modules\nunjucks\src\environment.js:39:5
+    at RawTask.call (E:\git_test\egg-p\node_modules\asap\asap.js:40:19)
+    at flush (E:\git_test\egg-p\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (internal/process/next_tick.js:74:9)
+name: "Template render error"
+pid: 16532
+hostname: DESKTOP-M355L57
+
+2019-12-23 13:39:48,746 ERROR 12308 nodejs.ClusterClientNoResponseError: client no response in 7529000ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\git_test\egg-p\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (timers.js:327:15)
+    at processTimers (timers.js:271:5)
+name: "ClusterClientNoResponseError"
+pid: 12308
+hostname: DESKTOP-M355L57
+
+2019-12-23 15:10:18,210 ERROR 3920 [egg-mongoose] mongodb://testAdmin:******@localhost:27017/test disconnected
+2020-02-23 15:29:42,189 ERROR 6024 [egg-mongoose] mongodb://testAdmin:******@localhost:27017/test disconnected

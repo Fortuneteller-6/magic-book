@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="/public/admin/css/base.css">
+<link rel="stylesheet" href="/public/admin/css/bootstrap.min.css">
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <th class="text-center danger">权限模块</th>
+            <th class="text-center danger">节点类型</th>
+            <th class="text-center danger">权限操作</th>
+            <th class="text-center danger">权限资源</th>
+            <th class="text-center danger">数据排序</th>
+            <th class="text-center danger">权限描述</th>
+            <th class="text-center danger">操作</th>
+        </thead>
+        <tbody>
+            {%for access in accessArr%} {%if access.access_module_id=="0"%}
+            <tr>
+                <td class="text-center">{{access.access_module}}</td>
+                {%if access.access_type=='1' %}
+                <td class="text-center">模块</td>
+                {%elseif access.access_type=='2' %}
+                <td class="text-center">菜单</td>
+                {%else%}
+                <td class="text-center">操作</td>
+                {%endif%}
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center">{{access.access_sort}}</td>
+                <td class="text-center">{{access.access_desc}}</td>
+                <td class="text-center">
+                    <a href="/admin/access/edit?id={{access._id}}">修改</a>
+                </td>
+            </tr>
+            {%for accessmenu in accessArr%} {%if accessmenu.access_module_id.toString()==access._id.toString()%} {%if accessmenu.access_type=='2'%}
+            <tr>
+                <td class="text-center">{{accessmenu.access_module}}</td>
+                {%if accessmenu.access_type=='1' %}
+                <td class="text-center">模块</td>
+                {%elseif accessmenu.access_type=='2' %}
+                <td class="text-center">菜单</td>
+                {%else%}
+                <td class="text-center">操作</td>
+                {%endif%}
+                <td class="text-center">{{accessmenu.access_action}}</td>
+                <td class="text-center">{{accessmenu.access_url}}</td>
+                <td class="text-center">{{accessmenu.access_sort}}</td>
+                <td class="text-center">{{accessmenu.access_desc}}</td>
+                <td class="text-center">
+                    <a href="/admin/access/edit?id={{accessmenu._id}}">修改</a>
+                    <a href="/admin/access/delete">删除</a>
+
+                </td>
+            </tr>
+            {%endif%} {%endif%} {%endfor%} {%for accessaction in accessArr%} {%if accessaction.access_module_id.toString()==access._id.toString()%}{%if accessaction.access_type=='3'%}
+            <tr>
+                <td class="text-center">{{accessaction.access_module}}</td>
+                {%if accessaction.access_type=='1' %}
+                <td class="text-center">模块</td>
+                {%elseif accessaction.access_type=='2' %}
+                <td class="text-center">菜单</td>
+                {%else%}
+                <td class="text-center">操作</td>
+                {%endif%}
+                <td class="text-center">{{accessaction.access_action}}</td>
+                <td class="text-center">{{accessaction.access_url}}</td>
+                <td class="text-center">{{accessaction.access_sort}}</td>
+                <td class="text-center">{{accessaction.access_desc}}</td>
+                <td class="text-center">
+                    <a href="/admin/access/edit?id={{accessaction._id}}">修改</a>
+                    <a href="/admin/access/delete">删除</a>
+
+                </td>
+            </tr>
+            {%endif%} {%endif%} {%endfor%} {%endif%} {%endfor%}
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/public/admin/css/base.css">
+<link rel="stylesheet" href="/public/admin/css/bootstrap.min.css">
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <th class="text-center danger">用户名称</th>
+            <th class="text-center danger">用户编号</th>
+            <th class="text-center danger">用户创建时间</th>
+            <th class="text-center danger">用户电话</th>
+            <th class="text-center danger">用户角色</th>
+            <th class="text-center danger">操作</th>
+        </thead>
+        <tbody>
+            {%for staff in staffs%}
+            <tr>
+                <td class="text-center">{{staff.staff_name}}</td>
+                <td class="text-center">{{staff.staff_no}}</td>
+                <td class="text-center">{{ helper.dateFormat(staff.time_create) }}</td>
+                <td class="text-center">{{staff.staff_phone}}</td>
+
+                <td class="text-center">{{staff.role[0].role_name}}</td>
+
+                <td class="text-center">
+
+
+                    <a href="/admin/staff/edit?_id={{staff._id}}">修改</a>
+                    <!-- <a href="/admin/role/edit?_id={{role._id}}">修改</a> -->
+                    <a href="/admin/staff/delete?_id={{staff._id}}">删除</a>
+                </td>
+            </tr>
+            {%endfor%}
+
+        </tbody>
+    </table>
+</div>
