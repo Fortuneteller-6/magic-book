@@ -1,0 +1,5 @@
+export const TASK_ADD="task_add"
+export const TASK_DELETE="task_delete"
+export const TASK_COMPLETE="task_complete"
+export const TASK_SEARCH="task_search"
+export const TASK_INIT="task_init"
