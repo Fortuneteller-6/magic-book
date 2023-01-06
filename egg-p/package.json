@@ -6,7 +6,7 @@
     "dependencies": {
         "dateformat": "^3.0.3",
         "egg": "^2.25.0",
-        "egg-bin": "^4.14.0",
+        "egg-bin": "^4.20.0",
         "egg-mongoose": "^3.2.0",
         "egg-view-nunjucks": "^2.2.0",
         "md5": "^2.2.1",
